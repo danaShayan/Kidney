@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    tools:context=".HealthServicesActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+
+        <LinearLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="30dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/bg_app_bar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_app_bar">
+
+                    <ImageView
+                        android:id="@+id/img_appBar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/login"
+                        tools:ignore="ContentDescription" />
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/health_services"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/firstTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="درمان بیماری مزمن کلیه"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="درمان بیماری مزمن کلیه با سه هدف انجام می‌گیرد: درمان علت اصلی بیماری، کاهش پیشرفت آسیب کلیوی و به حداقل رساندن هر گونه آسیبی که به اندام‌های دیگر ممکن است وارد شود؛ که عمدتا شامل قلب و رگ‌های خونی هستند.گزینه‌های مربوط به درمان بر اساس علت اصلی بیماری متغیر است. با این گفته، حتی اگر علت اصلی بیماری (مانند فشار خون بالا و یا دیابت) نیز کنترل شود، آسیب وارده می‌تواند هنوز هم پیشرفت کند ولی با سرعت کمتر."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore=",HardcodedText,RtlSymmetry" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="از جمله گزینه‌های درمانی احتمالی:"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="1- رژیم کمِ پروتئین به جلوگیری از تجمع محصولات جانبی ناشی از متابولیسم پروتئین کمک می‌کند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="2- محدودیت سدیم، پتاسیم و فسفر در رژیم غذایی ممکن است برای جبران تجمع این الکترولیت‌ها در بدن لازم باشد."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="3- دارو‌های ضد‌ فشار خون مانند مهار‌کننده‌های ACE یا مسدود‌کننده‌های گیرنده آنژیوتانسین ممکن است برای کنترل فشار خون بالا استفاده شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="4- دارو‌های استاتین مانند لیپیتور (آتورواستاتین) ممکن است برای کاهش کلسترول، شایع در افراد مبتلا به بیماری مزمن کلیه تجویز شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="5- مکمل‌های اریتروپویتین در تولید گلبول‌های قرمز خون، که ممکن است برای بهبود علائم کم‌خونی کمک کند، مؤثر هستند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="6- دارو‌های ادرار آور مانند لازیکس، ممکن است برای از بین بردن مایعات اضافی بدن استفاده شوند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:text="7- مکمل‌های کلسیم و ویتامین D  ممکن است برای جلوگیری از آسیب استخوانی و کاهش خطر شکستگی تجویز شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:text="اگر فردی (آخرین مرحله ی بیماری)ESRD  تشخیص داده شد، این به این معنی است که کلیه‌های فرد دیگر عملکردی ندارند و برای زنده ماندن شخص، دیالیز و یا پیوند کلیه لازم است."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_keyboard_return_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

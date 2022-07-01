@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                tools:ignore="UnusedAttribute">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:nextFocusDown="@id/last_name"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="تاریخ آزمایش :"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <TextView
+                    android:id="@+id/dateOfTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:nextFocusDown="@id/last_name"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/iranian_sans"
+                android:nextFocusDown="@id/last_name"
+                android:paddingHorizontal="8dp"
+                android:singleLine="true"
+                android:text="نتایج آزمایش : "
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/resultOfTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/iranian_sans"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="7dp"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="Autofill,TextFields"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/iranian_sans"
+                android:nextFocusDown="@id/last_name"
+                android:paddingHorizontal="8dp"
+                android:singleLine="true"
+                android:text="دستور بعدی : "
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/nextReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/iranian_sans"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="7dp"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="12sp"
+                tools:ignore="Autofill,TextFields"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/iranian_sans"
+                android:nextFocusDown="@id/last_name"
+                android:paddingHorizontal="8dp"
+                android:singleLine="true"
+                android:text="گزارش : "
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/iranian_sans"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="7dp"
+                android:nextFocusDown="@id/last_name"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText,TextFields"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

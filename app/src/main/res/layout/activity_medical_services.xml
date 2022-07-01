@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    tools:context=".MedicalServicesActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+
+        <LinearLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="30dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/bg_app_bar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_app_bar">
+
+                    <ImageView
+                        android:id="@+id/img_appBar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/login"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/medical_services"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/firstTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="مراجعه به پزشک"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="معمولا افراد بعد از این که درد شدید کلیه ها را متوجه می شوند برای علاج بیماری نسبت به مراجعه به پزشک اقدام می کنند! اما بحث پیگیری های پزشکی کاملا متفاوت است. پیگیری مداوم و ویزیت متخصص کلیه و مجاری در یکی از دو تخصص نفرولوژیست (برای بیماران با مشکلات حاد و مزمن کلیه) و اورولوژی (برای بیماران با مشکلات مثانه، مجاری و اندام تناسلی مرادنه) ضروری است. با گذشت زمان از تشخیص اولیه، درمان و جراحی ، پیگیری ها از جانب بیمار با دفعات کمتر انجام خواهد شد. بیماران باید جهت تماس با پزشک خود، در صورت وجود علائم جدید تشویق شوند. به طور منظم چک آپ شوند و در صورت بروز هر گونه تغییری جدید در پرونده بیمار ثبت شود. و با در درست داشتن نتایج آن توسط پزشک، معاینات پزشکی دقیق تر و به تبع آن درمان نیز مطمئن تر خواهد بود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="نفرولوژی چیست؟"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="تخصص نفرولوژی، زیرمجموعه­‌ای از طب داخلی است و تمرکز اصلی آن تشخیص و مدیریت بیماری­‌هایی است که بر عملکرد کلیه تاثیر می‌­گذارند. بیماری‌های زیادی از این قبیل وجود دارند و تعدادی از این بیماری­‌ها در ارتباط با فشار خون بالا ایجاد می­‌شوند. متخصص نفرولوژی قادر به انجام خدمات متعددی است، از جمله:"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="نظارت بر فشار خون"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="نظارت بر تعادل مایعات و الکترولیت ‌ها در بدن"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="7dp"
+                        android:text="درمان با دیالیز: دیالیز یک نوع درمان برای بیماری­‌های کلیوی است که توسط متخصص نفرولوژی انجام می گیرد. درمان با دیالیز می ‌تواند در درمانگاه، خانه و یا حتی در اورژانس انجام پذیرد. متخصص نفرولوژی بر روند دیالیز نظارت می­‌کند و در صورتی که درمان‌های دیگر بی­‌فایده باشند، نیاز به پیوند کلیه را ارزیابی می کند."
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        android:gravity="top"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="دارو: متخصص نفرولوژی می تواند برای فشار خون یا بیماری های کلیه دارو تجویز کند."
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="اورولوژی چیست؟"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="برخی از بیماری­‌ها، هم توسط متخصص نفرولوژی و هم توسط متخصص اورولوژی قابل درمان هستند، اما بیماری­‌های زیادی وجود دارند که تنها در حیطه تخصص اورولوژی قرار می­‌گیرند. متخصصین اورولوژی بر درمان مشکلات آناتومیکی یا ساختاری مجاری ادراری و اندام­‌های مرتبط با این مجاری تمرکز دارند. متخصص اورولوژی در درمان مشکلات مرتبط با نواحی ذیل نقش دارد:"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="میزراه"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="مثانه"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="حالب"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="سنگ کلیه و انسداد"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="غدد آدرنال"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="آلت تناسلی مردان"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="بیضه‌ها"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پروستات"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="غدد سمینال وزیکول"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="مجاری وازدفران"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="اپیدیدیم"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="دستورات پزشک"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="پزشک ممکن است مطابق شرایط و شرح حال بیمار دستورات متفاوتی را جهت مداوا و تسکین درد کلیه ها اتخاذ کند. پزشک ممکن است به شما توصیه کند:ناراحتی کلیه، دیابت، فشار خون و ... را از طریق مصرف داروهای لازم کنترل کنید. و برای اطمینان از تجویز دارو برایتان آزمایش و سونوگرافی درخواست میدهدو ممکن است برای مداوا دستور بستری یا جراحی بدهد و ادامه کار را به شخص بیمار جهت مراقبت در منزل موکول کند.اما نتیجه کلیات این اوامر بر میگردد به خود بیمار و مراقبتهای شخص بیمار."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="بیماری مزمن که بیمار به صورت طولانی مدت با آن دست و پنجه نرم میکند در صورت رعایت یکسری نکات ساده در زندگی روزانه از عود و پیشرف آن جلوگیری میشود. اتخاذ یک سبک زندگی سالم می‌تواند به پیشگیری از بسیاری از دلایل اصلی بیماری‌های کلیوی کمک کند. غذاهای سرشار از کلسترول را کاهش دهید مصرف نمک را کم کنید. مصرف الکل را محدود کنید. سیگار کشیدن را ترک کنید.لاغر شوید و .."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_keyboard_return_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

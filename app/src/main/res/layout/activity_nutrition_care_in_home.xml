@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    tools:context=".NutritionCareInHomeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+
+        <LinearLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="30dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/bg_app_bar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_app_bar">
+
+                    <ImageView
+                        android:id="@+id/img_appBar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/login"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/nutrition"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <LinearLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="نوشیدنی"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="نوشیدینی گازدار حتی نوع ورزشی آن- نوشیدینی الکلی- نوشیدنی غیر الکلی حاوی قند- کاهش خوردن قهوه"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="آب- چای کم رنگ-ماء الشعیر- آب مرکبات- آب چغندر- شیرنارگیل- آب گوجه فرنگی- آبیموه آناناس"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="فرآوردهای گوشتی"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="مصرف گوشت های فراوری شده مانند همبرگر، سوسیس، بیکن، استیک- روغن های حیوانی"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="گوشت مرغ- گوشت گوساله- روغن زیتون- روغن گیاهی"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="سبزیجات"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="حتی امکان از سبزیجات کنسرو شده استفاده نشود در صورت استفاده اول خوب با آب بشورید تا نمک آن برود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="گل کلم- سیر- کلم- فلفل دلمه ای- فلفل قرمز- تربچه- کرفس- پیاز- استفاده از سبزیجات تازه و فریز شده- سیب زمینی- شلغم"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="میوه"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="لیمو- موز- هندوانه- خربزه- انار-هلو- انگور- انبه- آناناس- گریپ فروت- آووکادو"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="لبنیات"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="مصرفزیاد لبنیات بهتر است توسط پزشک متخصص تغذیه تعیین شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="حبوبات"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="عدس و نخود بهتر است به صورت محدود استفاده شود"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="برنج سفید- گندم سیاه(گندم چاودار)- بلغور گندم- لوبیا قرمز"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="غلات"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="نان، برنج، ماکارونی، رشته، گندم، جو و ذرت"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="شیرینی"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="شیرین کننده های مصنوعی که امروزه استفاده می شوند مضر هستند و به هیچ عنوان ارزش غذایی ندارند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="ماهی"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="خوردن ماهی برای کلیه مفید است. مصرف آن در برنامه غذایی هفتگی توصیه می گردد."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="سس و ادویه"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="پرهیز شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="نمک- سویا سس، سس باربیکیو و کچاپ کمتر استفاده شود"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="استفاده شود :"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:layoutDirection="rtl"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="سیر- روغن زیتون- زردچوبه- دارچین- زنجبیل"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,UnusedAttribute" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_keyboard_return_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

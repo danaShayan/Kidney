@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    tools:context=".PreviousExperimentsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:paddingStart="30dp"
+                android:paddingTop="30dp"
+                android:paddingEnd="30dp"
+                tools:ignore="UnusedAttribute">
+
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@drawable/bg_app_bar">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_app_bar">
+
+                        <ImageView
+                            android:id="@+id/img_appBar"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/login"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginRight="12dp"
+                            android:text="@string/previous__experiments"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            tools:ignore="RelativeOverlap" />
+
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <TextView
+                        android:id="@+id/demographicTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:text="@string/previous__experiments"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/iranian_sans"
+                        android:padding="4dp"
+                        android:text="تاریخ آزمایش"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/dateOfTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_home"
+                        android:gravity="end"
+                        android:hint="1401/01/31"
+                        android:inputType="date|text"
+                        android:nextFocusDown="@id/resultOfTest"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/iranian_sans"
+                        android:padding="4dp"
+                        android:text="نتایج آزمایش"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/resultOfTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_home"
+                        android:gravity="top|start"
+                        android:hint="نتایج آزمایش خود را در این قسمت وارد کنید"
+                        android:minHeight="150dp"
+                        android:nextFocusDown="@id/nextReport"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/iranian_sans"
+                        android:padding="4dp"
+                        android:text="دستور بعدی"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/nextReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_home"
+                        android:gravity="top|start"
+                        android:hint="دستورات بعدی را در این قسمت وارد کنید"
+                        android:minHeight="150dp"
+                        android:nextFocusDown="@id/report"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/iranian_sans"
+                        android:padding="4dp"
+                        android:text="گزارش"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_home"
+                        android:gravity="top"
+                        android:hint="گزارش را در این قسمت وارد کنید"
+                        android:minHeight="150dp"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/conform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_app_bar"
+                android:backgroundTintMode="add"
+                android:gravity="center"
+                android:text="@string/conform"
+                tools:ignore="UnusedAttribute" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_keyboard_return_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

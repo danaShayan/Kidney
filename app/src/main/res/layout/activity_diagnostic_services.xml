@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    tools:context=".DiagnosticServicesActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="30dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/bg_app_bar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_app_bar">
+
+                    <ImageView
+                        android:id="@+id/img_appBar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/login"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/diagnostic_services"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/firstTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="تشخیص بیماری کلیه"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="تشخیص بیماری کلیه ها به چند روش انجام می شود:"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="اندازه گیری فشار خون"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="آزمایش ادرار"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="آزمایش خون"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="آزمایش تشخیص میزان فیلتراسیون گلومرولی"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="آزمایشات تصویر برداری"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="آزمایشات"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="6dp"
+                    android:text="بیماری مزمن کلیوی در مراحل اولیه هیچگونه علائم یا نشانه ای ندارد. بدون مواجه شدن با هیچگونه علائمی امکان از بین رفتن ۹۰ درصد از عملکرد کلیه وجود دارد. در مقابل این بیماری با چند آزمایش ساده که در ذیل آمده است قابل تشخیص می باشد:"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="آزمایش خون برای اندازه گیری کراتینین و اوره موجود در خون، مواد معدنی مانند (فسفر و کلسیم)، الکترولیت ها (سدیم،‌پتاسیم، کلرید، بی کربنات)، گلوکز(قند) و چربی را اندازگیری می کنند.
+آزمایش ادرار و مشاهده وجود یا نبودن پروتئین در ادرار
+بررسی ادرار ۲۴ ساعته، آنالیز ادرار،‌ کشت ادرار، بررسی میزان فیلتراسیون گلومرولی (GFR) نیز یکی دیگر از قسمت های بررسی عملکرد کلیه است."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iranian_sans"
+                    android:text="تصویربرداری"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:text="سونوگرافی :"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="این تست از امواج صوتی برای گرفتن یک تصویر از کلیه استفاده می کند. از این تست ممکن است برای بررسی ناهنجاری ها در اندازه یا موقعیت قرارگیری کلیه یا بررسی مواردی مانند سنگ کلیه یا تومور استفاده شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineHeight="25dp"
+                    android:text="سی تی اسکن:"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="p" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="این تکنیک تصویربرداری از پرتوهای ایکس برای تهیه تصویری از کلیه استقاده می کند. از این تست برای بررسی ناهنجاری های ساختاری یا وجود موانعی مثل سنگ کلیه استفاده می شود. این تست نیاز به تزریق وریدی مواد خاصی دارد که ممکن است نگرانی عمده افراد مبتلا به مشکلات کلیوی باشد."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_keyboard_return_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

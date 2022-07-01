@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kidney">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/kidney_home"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/kidney_home"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kidney"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".ShowDemographicActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ShowSonographyActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ShowPreviousExperimentsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ShowHistoryActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".SonographyActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ControlInHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ProperExerciseActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".NutritionCareInHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MedicationCareInHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PharmaceuticalActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".HealthServicesActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MedicalServicesActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DiagnosticServicesActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".CareInHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".CureKidneyActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".IllKidneyActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".KidneyHealthActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PreviousExperimentsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".HistoryOfDiseaseActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ConnectUsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".SurveyActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".LearnActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ClinicActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddDemographicActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".GuideActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".SourceActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AssessmentActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DashboardActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

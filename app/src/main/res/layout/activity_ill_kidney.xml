@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:fillViewport="true"
+    tools:context=".IllKidneyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/allTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="30dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/bg_app_bar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_app_bar">
+
+                    <ImageView
+                        android:id="@+id/img_appBar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/login"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/learn_kidney_ill"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appBar"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/bullet"
+                        android:layout_toLeftOf="@id/bullet"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="@string/kidney_position"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="4dp"
+                        android:background="@drawable/bullet_button"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="خستگی"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:background="@drawable/black_bullet_button"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="مشکل در تمرکز"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="مشکل خواب"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="اشتهای کم"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="تورم پاها و مچ پا"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="پف کردگی اطراف چشم هنگام صبح"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="پوست خشک"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="تکرر ادرار به خصوص در اواخر شب"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"                        android:background="@drawable/black_bullet_button"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="درد در کلیه ها"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:background="@drawable/black_bullet_button"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/bullet2"
+                        android:layout_toLeftOf="@id/bullet2"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="@string/sign_of_progress"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bullet2"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="4dp"
+                        android:background="@drawable/bullet_button"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="حالت تهوع"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/black_bullet_button"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="استفراغ"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:background="@drawable/black_bullet_button"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="از دست دادن اشتها"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:background="@drawable/black_bullet_button"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="تغییرات در دفع ادرار"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:background="@drawable/black_bullet_button"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="احتباس مایعات در بدن"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:background="@drawable/black_bullet_button"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="کم خونی (کاهش گلبول های قرمز)"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:background="@drawable/black_bullet_button"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="افزایش ناگهانی سطح پتاسیم (هایپرکالمی)"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:background="@drawable/black_bullet_button"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/iranian_sans"
+                        android:gravity="center"
+                        android:lineHeight="24dp"
+                        android:text="التهاب پریکارد"
+                        android:textColor="@color/light_black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="4dp"
+                        android:background="@drawable/black_bullet_button"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iranian_sans"
+                        android:text="انواع عارضه کلیوی"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bullet_button"
+                        android:elevation="3dp"
+                        tools:ignore="UnusedAttribute" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:gravity="end"
+                    android:text="1- بیماری های مزمن کلیوی"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="شایع ترین شکل بیماری کلیوی بیماری مزمن کلیه است. بیماری مزمن کلیه یک بیماری طولانی مدت است که به مرور زمان بهبود نمی یابد و معمولاً در اثر فشار خون بالا و دیابت ایجاد می شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:gravity="end"
+                    android:text="2- سنگ کلیه"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="6dp"
+                    android:text="یکی دیگر از مشکلات شایع کلیه سنگ کلیه است. این مشکل زمانی اتفاق می افتند که مواد معدنی و سایر مواد موجود در خون در کلیه متبلور می شوند و توده های جامد (سنگ) را تشکیل می دهند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="سنگ کلیه معمولاً هنگام ادرار از بدن خارج می شود. دفع سنگ کلیه می تواند بسیار دردناک باشد اما بندرت باعث ایجاد مشکلات جدی می شوند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:gravity="end"
+                    android:text="3- گلومرولونفریت"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="گلومرولونفریت التهاب گلومرول است. گلومرول ها ساختارهای بسیار کوچک در کلیه ها هستند که خون را تصفیه می کنند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="گلومرولونفریت می تواند در اثر عفونت ها، داروها یا ناهنجاری های مادرزادی ایجاد شود (اختلالی که در طول یا اندکی پس از تولد رخ می دهد) و معمولا به خودی خود بهتر می شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:gravity="end"
+                    android:text="4- بیماری کلیوی پلی کیستیک"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="بیماری کلیوی پلی کیستیک نوعی اختلال ژنتیکی است که باعث رشد تعداد زیادی کیست (کیسه های کوچک مایعات) در کلیه ها می شود."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="این کیست ها می توانند در عملکرد کلیه اختلال ایجاد کرده و باعث نارسایی کلیه شوند. (لازم است بدانید که کیست کلیه معمولا شایع بوده و تقریباً همیشه بی ضرر است. بیماری کلیوی پلی کیستیک یک بیماری جداگانه و جدی تر از  کیست کلیه است.)"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:gravity="end"
+                    android:text="5- عفونت ادراری"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,TooManyViews" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="عفونت ادراری یک نوع عفونت باکتریایی است در هر بخش از دستگاه ادراری ممکن است اتفاق بیافتد."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="عفونت های مثانه و مجرای ادرار شایع ترین نوع هستند که به راحتی قابل درمان بوده و بندرت به مشکلات سلامتی دیگر منجر می شوند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/iranian_sans"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="7dp"
+                    android:text="اگرچه این عفونت ها در صورت عدم درمان می توانند به سمت کلیه ها گسترش یافته و باعث نارسایی کلیه شوند."
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_baseline_home_24"
+            android:tint="@color/black"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allTxt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_baseline_keyboard_return_24"
+            android:tint="@color/black"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
